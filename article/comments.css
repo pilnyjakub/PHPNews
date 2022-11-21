@@ -1,0 +1,160 @@
+.subComments {
+    border-left: 1px solid var(--muted-color);
+    margin-left: 26px;
+    padding-left: 1rem;
+}
+
+.comment_content {
+    display: flex;
+    width: 100%;
+}
+
+.comment {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.name {
+    margin-block: 1rem;
+    font-weight: bold;
+}
+
+.time {
+    color: var(--muted-color);
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+.photo {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.photo img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+* {
+    scroll-padding-top: 200px;
+}
+
+#commentForm_content {
+    font-family: inherit;
+    width: 100%;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 80vw;
+}
+
+#commentForm * {
+    box-sizing: border-box;
+}
+
+#reply_element {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reply_element.hidden {
+    display: none;
+}
+
+#commentForm input,
+#commentForm textarea,
+#commentForm button,
+#commentForm #reply_element {
+    padding: 8px;
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 16px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.2);
+}
+
+#commentForm input[type="submit"] {
+    background-color: var(--link-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 40px;
+}
+
+#commentForm_submit {
+    display: flex;
+    justify-content: end;
+}
+
+#commentForm input[type="submit"]:hover {
+    transition: .3s;
+    background-color: var(--link-hover-color);
+}
+
+#commentForm textarea {
+    resize: vertical;
+    font-family: inherit;
+    height: 4rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+a[aria-label='Like'] {
+    text-decoration: none;
+}
+
+.heart {
+    color: red;
+    font-size: 1.5rem;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#reply_element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+#notLogged {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 18px;
+    background-color: white;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#commentForm_profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: -16px;
+}
+
+#comments {
+    width: 100%;
+    margin-block: 1rem;
+    border-top: 4px solid var(--border-color);
+}
+
+#back {
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 1.25rem;
+}

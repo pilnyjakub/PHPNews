@@ -1,0 +1,126 @@
+#flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.editProfile * {
+    box-sizing: border-box;
+}
+
+.editProfile {
+    max-width: 80vw;
+    width: 400px;
+    padding: 32px;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #fbfbfb;
+}
+
+.editProfile input,
+.editProfile textarea,
+.editProfile button {
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 24px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.2);
+}
+
+.editProfile input[type="submit"] {
+    background-color: var(--link-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 32px 0 24px 0;
+}
+
+.editProfile input[type="submit"]:hover {
+    transition: .3s;
+    background-color: var(--link-hover-color);
+}
+
+.editProfile .error {
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 1px 2px rgb(204, 0, 0, 0.5);
+    background-color: #ffbfbf;
+    border-radius: 0 0 4px 4px;
+    color: #cc0000;
+    padding: 2px 8px;
+}
+
+.editProfile p {
+    font-size: .75rem;
+    margin: 24px 0 -16px 0;
+    text-align: center;
+}
+
+#photoLabel {
+    font-size: .9rem;
+    text-align: unset;
+}
+
+.editProfile h1 {
+    margin: 0;
+}
+
+#authorForm textarea {
+    resize: vertical;
+    font-family: inherit;
+    height: 4rem;
+}
+
+.social {
+    display: flex;
+}
+
+.social :nth-child(1) {
+    border-radius: 4px 0 0 4px;
+}
+
+.social :nth-child(2) {
+    border-radius: 0 4px 4px 0;
+}
+
+.social .actions {
+    margin-top: 24px;
+    margin-left: 10px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .actions button {
+    margin: 0;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagePreview {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagePreview img {
+    object-fit: cover;
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width: 1000px) {
+    #flex {
+        flex-direction: column;
+    }
+}
